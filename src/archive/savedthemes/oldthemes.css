@@ -1,0 +1,155 @@
+/*
+   Old Theme
+   Archived during Development
+   Might be used in future
+   
+
+*/
+
+
+
+:root {
+  /* Main colors */
+  --bg-primary: #f5f8ff;
+  --bg-secondary: #e5eeff;
+  --bg-accent: #d0e0ff;
+  --bg-hello: #f0f5ff;
+  --bg-education: #e0ebff;
+  --bg-skill: #e0ebff;
+  --bg-project: #e0ebff;
+  --bg-project-showcase: #e0ebff;
+  --bg-aboutme: #e1e9f3;
+
+  /* Text colors */
+  --text-primary: #09152c;
+  --text-secondary: #243b6c;
+  --text-muted: #4a5f8a;
+  --text-light: #09152c;
+  --text-lighter: #1a2947;
+  --text-lightest: #2e4270;
+
+  /* Accent colors */
+  --accent-primary: #0a967d;
+  --accent-hover: #08705e;
+  --accent-light: rgba(10, 150, 125, 0.1);
+  --accent-medium: rgba(10, 150, 125, 0.3);
+
+  /* Gradient colors */
+  --gradient-primary: linear-gradient(45deg, #0a967d, #0a81ab);
+  --gradient-line: linear-gradient(90deg, transparent, rgba(10, 150, 125, 0.15), transparent);
+  --gradient-timeline: linear-gradient(to bottom, rgba(10, 150, 125, 0.7), rgba(10, 150, 125, 0.3));
+  --gradient-bg: radial-gradient(circle at 20% 50%, rgba(64, 175, 255, 0.05), transparent 40%);
+  --gradient-education-bg: radial-gradient(circle at 70% 50%, rgba(10, 150, 125, 0.03), transparent 60%);
+  --gradient-skill-bg: radial-gradient(circle at 80% 30%, rgba(100, 255, 218, 0.03), transparent 60%);
+  --gradient-project-bg: radial-gradient(circle at 20% 70%, rgba(100, 255, 218, 0.03), transparent 60%);
+
+  /* Card colors */
+  --card-bg: rgba(224, 235, 255, 0.6);
+  --card-border: rgba(10, 150, 125, 0.1);
+
+  /* UI elements */
+  --card-bg: #ffffff;
+  --card-border: #e4e9f2;
+  --input-bg: #ffffff;
+  --button-bg: var(--accent-primary);
+  --button-text: #ffffff;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 10px rgba(10, 150, 125, 0.2);
+  --shadow-button: 0 5px 15px rgba(10, 150, 125, 0.2);
+  --shadow-button-skill: 0 0 15px rgba(100, 255, 218, 0.2);
+  --shadow-timeline: 0 0 8px rgba(10, 150, 125, 0.6);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-card-hover: 0 6px 15px rgba(0, 0, 0, 0.15), 0 0 10px rgba(10, 150, 125, 0.15);
+
+  /* Icon colors */
+  --icon-primary: var(--text-primary);
+  --icon-accent: var(--accent-primary);
+  --icon-filter: brightness(0) invert(0);
+  --icon-opacity: 0.8;
+
+  /* Other UI elements */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 50%;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Transitions */
+  --transition-quick: 0.15s ease;
+  --transition-default: 0.3s ease;
+}
+
+/* Dark Theme */
+.dark {
+  /* Main colors */
+  --bg-primary: #09152c;
+  --bg-secondary: #0e1e3d;
+  --bg-accent: #172a50;
+  --bg-hello: #0a192f;
+  --bg-education: #0c1e3b;
+  --bg-skill: #0c1e3b;
+  --bg-project: #0c1e3b;
+  --bg-project-showcase: #09152c;
+  --bg-aboutme: #01051F;
+
+  /* Text colors */
+  --text-primary: #ffffff;
+  --text-secondary: #e2e8f0;
+  --text-muted: #a0aec0;
+  --text-light: #e6f1ff;
+  --text-lighter: #ccd6f6;
+  --text-lightest: #a8b2d1;
+
+  /* Accent colors */
+  --accent-primary: #64ffda;
+  --accent-hover: #4ce3c2;
+  --accent-light: rgba(100, 255, 218, 0.1);
+  --accent-medium: rgba(100, 255, 218, 0.3);
+
+  /* Gradient colors */
+  --gradient-primary: linear-gradient(45deg, #64ffda, #0a81ab);
+  --gradient-line: linear-gradient(90deg, transparent, rgba(100, 255, 218, 0.15), transparent);
+  --gradient-timeline: linear-gradient(to bottom, rgba(100, 255, 218, 0.7), rgba(100, 255, 218, 0.3));
+  --gradient-bg: radial-gradient(circle at 20% 50%, rgba(64, 175, 255, 0.1), transparent 40%);
+  --gradient-education-bg: radial-gradient(circle at 70% 50%, rgba(100, 255, 218, 0.05), transparent 60%);
+  --gradient-skill-bg: radial-gradient(circle at 80% 30%, rgba(100, 255, 218, 0.05), transparent 60%);
+  --gradient-project-bg: radial-gradient(circle at 20% 70%, rgba(100, 255, 218, 0.05), transparent 60%);
+
+  /* Card colors */
+  --card-bg: rgba(13, 31, 61, 0.6);
+  --card-border: rgba(100, 255, 218, 0.1);
+
+  /* UI elements */
+  --card-bg: #0e1e3d;
+  --card-border: #172a50;
+  --input-bg: #172a50;
+  --button-bg: #64ffda;
+  --button-text: #09152c;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 10px rgba(100, 255, 218, 0.2);
+  --shadow-button: 0 5px 15px rgba(100, 255, 218, 0.2);
+  --shadow-button-skill: 0 0 15px rgba(100, 255, 218, 0.3);
+  --shadow-timeline: 0 0 8px rgba(100, 255, 218, 0.6);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-card-hover: 0 6px 15px rgba(0, 0, 0, 0.25), 0 0 10px rgba(100, 255, 218, 0.15);
+
+  /* Icon colors */
+  --icon-primary: var(--text-primary);
+  --icon-accent: var(--accent-primary);
+  --icon-filter: brightness(0) invert(1);
+  --icon-opacity: 0.5;
+}

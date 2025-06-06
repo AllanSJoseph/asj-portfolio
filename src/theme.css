@@ -1,0 +1,147 @@
+/**
+ * Theme Variables CSS
+ * Optimised by Claude and ChatGPT
+ * 
+ * Light theme values are set on :root
+ * Dark theme values are set on .dark class
+
+ */
+
+:root {
+    /* Main colors - bluish-white */
+    --bg-primary: #f4f7ff;
+    --bg-secondary: #eaf1ff;
+    --bg-accent: #dce9ff;
+    --bg-hello: #edf3ff;
+    --bg-education: #e3eeff;
+    --bg-skill: #e3eeff;
+    --bg-project: #e3eeff;
+    --bg-project-showcase: #e3eeff;
+    --bg-page-not-found: #e3eeff;
+    --bg-aboutme: #e9f0fb;
+
+    /* Text colors */
+    --text-primary: #0c1a3c;
+    --text-secondary: #1e2f5c;
+    --text-muted: #4a5f8a;
+    --text-light: #0c1a3c;
+    --text-lighter: #2d3f70;
+    --text-lightest: #41598c;
+
+    /* Accent colors - bluish */
+    --accent-primary: #1e90ff;
+    --accent-hover: #166fd1;
+    --accent-light: rgba(30, 144, 255, 0.1);
+    --accent-medium: rgba(30, 144, 255, 0.3);
+
+    /* Gradient colors */
+    --gradient-primary: linear-gradient(45deg, #1e90ff, #0a81ab);
+    --gradient-line: linear-gradient(90deg, transparent, rgba(30, 144, 255, 0.15), transparent);
+    --gradient-timeline: linear-gradient(to bottom, rgba(30, 144, 255, 0.7), rgba(30, 144, 255, 0.3));
+    --gradient-bg: radial-gradient(circle at 20% 50%, rgba(64, 175, 255, 0.05), transparent 40%);
+    --gradient-education-bg: radial-gradient(circle at 70% 50%, rgba(30, 144, 255, 0.03), transparent 60%);
+    --gradient-skill-bg: radial-gradient(circle at 80% 30%, rgba(30, 144, 255, 0.03), transparent 60%);
+    --gradient-project-bg: radial-gradient(circle at 20% 70%, rgba(30, 144, 255, 0.03), transparent 60%);
+
+    /* Card/UI */
+    --card-bg: #ffffff;
+    --card-border: #e4e9f2;
+    --input-bg: #ffffff;
+    --button-bg: var(--accent-primary);
+    --button-text: #ffffff;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.1);
+    --shadow-glow: 0 0 10px rgba(30, 144, 255, 0.2);
+    --shadow-button: 0 5px 15px rgba(30, 144, 255, 0.2);
+    --shadow-button-skill: 0 0 15px rgba(30, 144, 255, 0.2);
+    --shadow-timeline: 0 0 8px rgba(30, 144, 255, 0.6);
+    --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-card-hover: 0 6px 15px rgba(0, 0, 0, 0.15), 0 0 10px rgba(30, 144, 255, 0.15);
+
+    /* Icon colors */
+    --icon-primary: var(--text-primary);
+    --icon-accent: var(--accent-primary);
+    --icon-filter: brightness(0) invert(0);
+    --icon-opacity: 0.8;
+
+    /* Radii & Spacing */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-full: 50%;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+
+    /* Transitions */
+    --transition-quick: 0.15s ease;
+    --transition-default: 0.3s ease;
+}
+
+.dark {
+    /* Main colors - bluish black */
+    --bg-primary: #0a0f1a;
+    --bg-secondary: #0e1a2d;
+    --bg-accent: #152640;
+    --bg-hello: #0c1526;
+    --bg-education: #0d1a33;
+    --bg-skill: #0d1a33;
+    --bg-project: #0d1a33;
+    --bg-project-showcase: #0a0f1a;
+    --bg-page-not-found: #0a0f1a;
+    --bg-aboutme: #080d18;
+
+    /* Text colors */
+    --text-primary: #ffffff;
+    --text-secondary: #cdd8e9;
+    --text-muted: #8a9bb7;
+    --text-light: #dce6f5;
+    --text-lighter: #aebcd6;
+    --text-lightest: #92a3c0;
+
+    /* Accent colors - electric blue */
+    --accent-primary: #3399ff;
+    --accent-hover: #1a75d1;
+    --accent-light: rgba(51, 153, 255, 0.1);
+    --accent-medium: rgba(51, 153, 255, 0.3);
+
+    /* Gradient colors */
+    --gradient-primary: linear-gradient(45deg, #3399ff, #2b6cb0);
+    --gradient-line: linear-gradient(90deg, transparent, rgba(51, 153, 255, 0.15), transparent);
+    --gradient-timeline: linear-gradient(to bottom, rgba(51, 153, 255, 0.7), rgba(51, 153, 255, 0.3));
+    --gradient-bg: radial-gradient(circle at 20% 50%, rgba(51, 153, 255, 0.1), transparent 40%);
+    --gradient-education-bg: radial-gradient(circle at 70% 50%, rgba(51, 153, 255, 0.05), transparent 60%);
+    --gradient-skill-bg: radial-gradient(circle at 80% 30%, rgba(51, 153, 255, 0.05), transparent 60%);
+    --gradient-project-bg: radial-gradient(circle at 20% 70%, rgba(51, 153, 255, 0.05), transparent 60%);
+
+    /* Card/UI */
+    --card-bg: #101d33;
+    --card-border: #1a2a45;
+    --input-bg: #1a2a45;
+    --button-bg: var(--accent-primary);
+    --button-text: #ffffff;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 10px rgba(51, 153, 255, 0.2);
+    --shadow-button: 0 5px 15px rgba(51, 153, 255, 0.2);
+    --shadow-button-skill: 0 0 15px rgba(51, 153, 255, 0.3);
+    --shadow-timeline: 0 0 8px rgba(51, 153, 255, 0.6);
+    --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.2);
+    --shadow-card-hover: 0 6px 15px rgba(0, 0, 0, 0.25), 0 0 10px rgba(51, 153, 255, 0.15);
+
+    /* Icon colors */
+    --icon-primary: var(--text-primary);
+    --icon-accent: var(--accent-primary);
+    --icon-filter: brightness(0) invert(1);
+    --icon-opacity: 0.5;
+}
+
+

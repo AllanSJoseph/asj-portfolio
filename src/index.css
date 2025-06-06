@@ -1,0 +1,8 @@
+body{
+  margin: 0 auto;
+  /* font-family:'Courier New', Courier, monospace; */
+  font-family: 'Roboto', sans-serif;
+  /* background-color: rgb(1, 5, 31); */
+  color: white;
+  /* overflow-x: hidden; */
+}

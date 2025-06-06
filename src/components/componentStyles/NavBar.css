@@ -1,0 +1,210 @@
+/* Navbar - Using Theme Variables */
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bg-primary);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-default);
+  }
+  
+  .logoContainer {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Logo Image Styles */
+  .logo-image {
+    height: 40px;
+    width: auto;
+    filter: var(--icon-filter);
+    transition: filter var(--transition-default), transform var(--transition-default);
+  }
+  
+  /* Glow Effect on Hover */
+  .logoContainer:hover .logo-image {
+    filter: var(--icon-filter) drop-shadow(0 0 8px var(--accent-light));
+    transform: scale(1.05);
+  }
+  
+  /* Right Container - Houses Theme Toggle and Navigation */
+  .right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  /* Theme Container */
+  .theme-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Hamburger Button */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    z-index: 11;
+  }
+
+  .theme-container{
+    font-size: 2rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    z-index: 11;
+  }
+  
+  .hamburger,.theme-container img {
+    width: 24px;
+    height: 24px;
+    filter: var(--icon-filter);
+  }
+  
+  /* Desktop Navigation */
+  .navigation-container {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navigation-container a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: var(--transition-default);
+    padding: 0.5rem 0;
+  }
+  
+  /* Underline hover animation */
+  .navigation-container a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-primary);
+    bottom: -4px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform var(--transition-default), opacity var(--transition-default);
+    opacity: 0;
+  }
+  
+  .navigation-container a:hover {
+    color: var(--accent-primary);
+  }
+  
+  .navigation-container a:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      justify-content: space-between;
+      height: auto;
+      padding: 0.75rem 1.5rem;
+    }
+    
+    .logoContainer {
+      position: relative;
+      left: 0;
+      transform: none;
+    }
+    
+    .right-container {
+      gap: 1rem;
+    }
+    
+    /* Keep the glow effect on mobile */
+    .logoContainer:hover .logo-image {
+      filter: drop-shadow(0 0 8px var(--accent-light));
+      transform: scale(1.05);
+    }
+    
+    .hamburger {
+      display: flex;
+      align-items: center;
+      position: relative;
+      right: 0;
+    }
+    
+    /* Mobile navigation container */
+    .navigation-container {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: var(--bg-secondary);
+      padding: 1rem 2rem;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+      
+      /* Initial state for animation */
+      opacity: 0;
+      transform: translateY(-20px);
+      pointer-events: none;
+      
+      /* Animation properties */
+      transition: opacity var(--transition-default), transform var(--transition-default), visibility var(--transition-default);
+      visibility: hidden;
+      
+      /* Add width to prevent layout shift */
+      width: 200px;
+      border-left: 1px solid var(--accent-light);
+      border-bottom: 1px solid var(--accent-light);
+    }
+    
+    /* Active state for animation */
+    .navigation-container.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      visibility: visible;
+    }
+    
+    /* Link animations inside the mobile menu */
+    .navigation-container a {
+      padding: 0.5rem 0;
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: opacity var(--transition-default), transform var(--transition-default), color var(--transition-default);
+    }
+    
+    .navigation-container.active a {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+    /* Staggered animation for links */
+    .navigation-container.active a:nth-child(1) {
+      transition-delay: 0.1s;
+    }
+    
+    .navigation-container.active a:nth-child(2) {
+      transition-delay: 0.2s;
+    }
+    
+    .navigation-container.active a:nth-child(3) {
+      transition-delay: 0.3s;
+    }
+    
+    .navigation-container.active a:nth-child(4) {
+      transition-delay: 0.4s;
+    }
+    
+    /* Keep underline hover animation in mobile */
+    .navigation-container a::after {
+      width: 40%;
+    }
+  }

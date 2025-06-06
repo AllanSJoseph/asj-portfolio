@@ -1,0 +1,556 @@
+.hello_container {
+    background-color: var(--bg-hello);
+    width: 100%;
+    padding: 5rem 2rem;
+    color: var(--text-light);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.hello_container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-bg);
+    z-index: 0;
+}
+
+.hello_content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Left section styling */
+.left_hello {
+    flex: 1;
+    padding-right: 3rem;
+}
+
+.greeting h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--accent-primary);
+    text-shadow: var(--shadow-glow);
+}
+
+.greeting h1:nth-child(2) {
+    margin-bottom: 1rem;
+}
+
+.typewriter {
+    height: 3rem;
+    margin: 1.5rem 0;
+}
+
+.typewriter h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.typewriter-text {
+    color: var(--accent-primary);
+}
+
+.location_icon {
+    opacity: var(--icon-opacity);
+    filter: var(--icon-filter);
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: var(--accent-primary);
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.left_hello h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+/* Connect me section */
+.connect_me {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-lighter);
+    background-color: var(--accent-light);
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    transition: var(--transition-default);
+    border: 1px solid var(--accent-medium);
+}
+
+.social-link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    transition: filter var(--transition-default);
+    filter: var(--icon-filter);
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-button);
+    background-color: var(--accent-medium);
+}
+
+.social-link:hover img {
+    /*filter: drop-shadow(0 0 5px var(--accent-light));*/
+    filter: var(--icon-filter);
+}
+
+/* Right section styling with circular image */
+.right_hello_img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 8px;
+    background: var(--gradient-primary);
+    position: relative;
+    transition: var(--transition-default);
+}
+
+.profile-image-container::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--transition-default);
+}
+
+.profile-image-container:hover {
+    transform: scale(1.03);
+}
+
+.profile-image-container:hover::before {
+    opacity: 1;
+    filter: blur(10px);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--bg-hello);
+}
+
+/* Technical pattern background for image */
+.profile-image-container::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--accent-light);
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.experience-n-education{
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+}
+
+/* Education Section Styling with Timeline */
+.eduexp-section {
+    background-color: var(--bg-education);
+    width: 100%;
+    padding: 4rem 2rem;
+    color: var(--text-light);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.eduexp-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-education-bg);
+    z-index: 0;
+}
+
+/* Gradient connector to blend with previous section */
+.eduexp-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-line);
+    z-index: 1;
+}
+
+.eduexp-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: var(--accent-primary);
+    text-shadow: var(--shadow-glow);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    margin-left: 2rem; /* Add left margin to align with content */
+}
+
+/* Decorative line under main title */
+.eduexp-section h1::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: var(--accent-primary);
+    bottom: -8px;
+    left: 0;
+}
+
+/* Timeline container */
+.eduexp-container {
+    position: relative;
+    max-width: 1200px; /* Increased max-width */
+    margin: 0 0 0 2rem; /* Left-aligned with left margin */
+    padding-left: 30px;
+    z-index: 1;
+}
+
+/* Main timeline vertical line */
+.eduexp-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 6px;
+    width: 2px;
+    background: var(--gradient-timeline);
+    z-index: 1;
+}
+
+/* Education detail item */
+.eduexp-detail {
+    position: relative;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--card-border);
+    transition: transform var(--transition-default), box-shadow var(--transition-default);
+    max-width: 600px; /* Limit width of each item */
+}
+
+/* Last education item spacing adjustment */
+.eduexp-detail:last-child {
+    margin-bottom: 0;
+}
+
+.eduexp-detail:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-card-hover);
+}
+
+/* Timeline circle node */
+.eduexp-detail::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 24px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--accent-primary);
+    box-shadow: var(--shadow-timeline);
+    z-index: 2;
+}
+
+/* Connector line from circle to card */
+.eduexp-detail::after {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 31px;
+    width: 16px;
+    height: 2px;
+    background-color: var(--accent-medium);
+    z-index: 1;
+}
+
+.eduexp-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-lighter);
+    margin: 0 0 0.8rem;
+}
+
+.institution-name {
+    font-size: 1.1rem;
+    color: var(--text-lightest);
+    margin: 0 0 0.6rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.eduexp-date {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin: 0 0 0.6rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.institution-name img,
+.eduexp-date img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    opacity: var(--icon-opacity);
+    filter: var(--icon-filter);
+}
+
+.eduexp-detail p {
+    color: var(--accent-primary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 0.8rem;
+}
+
+.eduexp-detail ul {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 0.8rem;
+}
+
+/* Current education highlight */
+.eduexp-detail p i {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Technical design element */
+.eduexp-section::before {
+    content: '';
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    width: 90px;
+    height: 90px;
+    border: 1px solid var(--accent-light);
+    border-radius: 4px;
+    z-index: 0;
+    opacity: 0.5;
+    transform: rotate(22deg);
+}
+
+.contact-section, .contact-me{
+    width: 100%;
+}
+
+.connect_me{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.about_me{
+    text-align: center;
+    background-color: var(--bg-aboutme);
+    color: var(--text-secondary);
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.about_me h1{
+    font-size: 2.5rem;
+}
+
+.about_me h1,span{
+    color: var(--accent-primary);
+    text-decoration: solid;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .hello_content {
+        flex-direction: column-reverse;
+    }
+    
+    .left_hello {
+        padding-right: 0;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    
+    .connect_me {
+        justify-content: center;
+    }
+    
+    .profile-image-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .greeting h1 {
+        font-size: 2.5rem;
+    }
+    
+    .typewriter h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hello_container {
+        padding: 3rem 1rem;
+    }
+    
+    .profile-image-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .experience-n-education{
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-between;
+    }
+    
+    .greeting h1 {
+        font-size: 2rem;
+    }
+    
+    .social-link {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-n-education{
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-between;
+    }
+
+    .eduexp-section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .eduexp-section h1 {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .eduexp-container {
+        margin-left: 1rem;
+        padding-left: 25px;
+    }
+    
+    .eduexp-detail {
+        max-width: 100%;
+    }
+    
+    .eduexp-detail::before {
+        left: -25px;
+        width: 12px;
+        height: 12px;
+    }
+    
+    .eduexp-detail::after {
+        left: -13px;
+        width: 13px;
+    }
+    
+    .eduexp-title {
+        font-size: 1.2rem;
+    }
+    
+    .institution-name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .experience-n-education{
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-between;
+    }
+
+    .eduexp-section {
+        padding: 2.5rem 1rem;
+    }
+    
+    .eduexp-section h1 {
+        margin-left: 0.5rem;
+    }
+    
+    .eduexp-container {
+        margin-left: 0.5rem;
+        padding-left: 22px;
+    }
+    
+    .eduexp-detail {
+        padding: 1.2rem;
+    }
+    
+    .eduexp-detail::before {
+        left: -22px;
+        width: 10px;
+        height: 10px;
+        top: 22px;
+    }
+    
+    .eduexp-detail::after {
+        left: -12px;
+        width: 12px;
+        top: 27px;
+    }
+}

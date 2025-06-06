@@ -1,0 +1,104 @@
+[
+    {
+        "skillType": "Languages",
+        "skillDesc": "These are programming languages I know",
+        "skillList": [
+            {
+                "skillName": "Python",
+                "skillLink": "https://www.python.org/"
+            },
+            {
+                "skillName": "Java",
+                "skillLink": "https://www.java.com/en/"
+            },
+            {
+                "skillName": "PHP",
+                "skillLink": "https://www.php.net/"
+            },
+            {
+                "skillName": "JavaScript",
+                "skillLink": "https://en.wikipedia.org/wiki/JavaScript"
+            },
+            {
+                "skillName": "HTML5",
+                "skillLink": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            },
+            {
+                "skillName": "CSS3",
+                "skillLink": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },
+            {
+                "skillName": "C",
+                "skillLink": "https://en.wikipedia.org/wiki/C_(programming_language)"
+            },
+            {
+                "skillName": "C++",
+                "skillLink": "https://isocpp.org/"
+            },
+            {
+                "skillName": "MySQL",
+                "skillLink": "https://www.mysql.com/"
+            },
+            {
+                "skillName": "PostgreSQL",
+                "skillLink": "https://www.postgresql.org/"
+            }
+        ]
+    },
+    {
+        "skillType":"Technologies / Frameworks",
+        "skillDesc": "These the frameworks and technologies I know",
+        "skillList":[
+            {
+                "skillName": "Git",
+                "skillLink": "https://git-scm.com/"
+            },
+            {
+                "skillName": "React",
+                "skillLink": "https://react.dev/"
+            },
+            {
+                "skillName": "Flutter",
+                "skillLink": "https://flutter.dev/"
+            },
+            {
+                "skillName": "Django",
+                "skillLink": "https://www.djangoproject.com/"
+            },
+            {
+                "skillName": "Linux (WSL)",
+                "skillLink": "https://learn.microsoft.com/en-us/windows/wsl/"
+            },
+            {
+                "skillName": "Android",
+                "skillLink": "https://developer.android.com/"
+            },
+            {
+                "skillName": "Firebase",
+                "skillLink": "https://firebase.google.com/"
+            },
+            {
+                "skillName": "Docker",
+                "skillLink": "https://www.docker.com/"
+            }   
+        ]
+    },
+    {
+        "skillType": "Hobby-based Skills",
+        "skillDesc": "These are some skills I have developed through my hobbies...",
+        "skillList":[
+            {
+                "skillName": "Video Editing (DaVinci Resolve)",
+                "skillLink": "https://www.blackmagicdesign.com/products/davinciresolve"
+            },
+            {
+                "skillName": "Photography",
+                "skillLink": "https://en.wikipedia.org/wiki/Photography"
+            },
+            {
+                "skillName": "Poster Making (Canva)",
+                "skillLink": "https://www.canva.com/"
+            }
+        ]
+    }
+]

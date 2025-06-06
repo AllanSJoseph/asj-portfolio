@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Skills Section Styling */
+.skill-container {
+    background-color: var(--bg-skill);
+    width: 100%;
+    padding: 4rem 0rem 2rem 2rem;
+    color: var(--text-light);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-skill-bg);
+    z-index: 0;
+}
+
+/* Gradient connector to blend with previous section */
+.skill-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, rgba(100, 255, 218, 0.15), transparent);
+    z-index: 1;
+}
+
+.skill-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--accent-primary);
+    text-shadow: var(--shadow-glow);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+/* Decorative line under main title */
+.skill-container h1::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: var(--accent-primary);
+    bottom: -8px;
+    left: 0;
+}
+
+.skill-container h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-lighter);
+    margin: 2rem 0 1rem;
+    position: relative;
+    z-index: 1;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-primary);
+}
+
+.skill-container p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    font-style: italic;
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+.skill-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 1rem 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.skill-item-container a {
+    background-color: rgba(100, 255, 218, 0.07);
+    color: var(--text-lighter);
+    padding: 8px 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    display: inline-flex;
+    align-items: center;
+}
+
+.skill-item-container a:hover {
+    background-color: rgba(100, 255, 218, 0.15);
+    border: 1px solid var(--accent-hover);
+    color: var(--accent-primary);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-button-skill);
+    text-shadow: 0 0 8px rgba(100, 255, 218, 0.5);
+}
+
+/* Technical design element */
+.skill-container::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    border-radius: 4px;
+    z-index: 0;
+    opacity: 0.5;
+    transform: rotate(15deg);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+    .skill-container {
+        padding: 3rem 1.5rem;
+    }
+    
+    .skill-container h1 {
+        font-size: 2rem;
+    }
+    
+    .skill-container h2 {
+        font-size: 1.2rem;
+    }
+    
+    .skill-item-container {
+        gap: 10px;
+    }
+    
+    .skill-item-container a {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    * {
+        box-sizing: border-box;
+    }
+    .skill-container {
+        padding: 2.5rem 1rem;
+    }
+}

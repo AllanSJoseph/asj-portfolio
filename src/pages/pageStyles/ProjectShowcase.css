@@ -1,0 +1,178 @@
+
+
+/* Main styling with dark background */
+.project-showcase {
+    background-color: var(--bg-project-showcase);
+    color: white;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Title and headings with teal color */
+  .project-title-showcase {
+    color: var(--accent-primary);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-showcase h2, 
+  .project-showcase h3 {
+    color: var(--accent-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Project description styling */
+  .project-desc-brief {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+    opacity: 0.9;
+  }
+  
+  /* GitHub link styling */
+  .project-github {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .github-link-proj {
+    height: 24px;
+    filter: var(--icon-filter);
+    margin-right: 0.5rem;
+  }
+  
+  .github-link-proj-text {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .github-link-proj-text:hover {
+    color: var(--accent-primary);
+    text-decoration: underline;
+  }
+  
+  /* Project demo section - centered */
+  .project-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  
+  /* Making the video component centered and responsive */
+  .project-demo iframe {
+    max-width: 100%;
+    width: 800px;
+    height: 450px;
+  }
+
+  .project-details p{
+    color: var(--text-secondary);
+  }
+  
+  /* Technologies section side by side on desktop */
+  .project-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .project-tech-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  /* Project screenshots section - centered */
+  .project-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  
+  .img-carousel {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* Title icons */
+  .title-icon {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+  
+  .title-icon img {
+    height: 24px;
+    filter: var(--icon-filter);
+    width: 24px;
+  }
+  
+  /* List styling */
+  .tech-list {
+    list-style-type: none;
+    color: var(--text-light);
+    padding: 0;
+  }
+  
+  .tech-list-item {
+    background-color: var(--accent-light);
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  
+  /* Responsive design for mobile */
+  @media screen and (max-width: 992px) {
+
+    .project-showcase {
+      padding: 1rem;
+    }
+    
+    .project-title-showcase {
+      font-size: 2rem;
+    }
+    
+    .project-techs {
+      flex-direction: column;
+    }
+    
+    .project-tech-section {
+      width: 100%;
+    }
+    
+    .project-demo iframe {
+      height: 300px;
+    }
+  }
+  
+  /* For very small screens */
+  @media screen and (max-width: 480px) {
+
+    .project-demo iframe {
+      height: 240px;
+    }
+    
+    .tech-list-item {
+      display: block;
+      margin-right: 0;
+    }
+  }
+  
+  /* Add this class to the parent div to apply all styles */
+  .project-showcase-container {
+    background-color: var(--bg-project-showcase);
+    color: white;
+    width: 100%;
+  }

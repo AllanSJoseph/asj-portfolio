@@ -1,0 +1,62 @@
+[
+    {
+        "projectCode" : "expnse-trker",
+        "projectName" : "Expense Tracker",
+        "projectType" : "Android Application",
+        "projectDate" : "Apr 2025",
+        "projectLang" : ["Java","XML","SQLite"],
+        "projectTools" : ["Android Studio", "MakePhill Graphing Library"],
+        "projectMembers" : ["Allan S Joseph", "Rajnish Kumar", "Midhun M S", "Aswin E"],
+        "projectDesc" : "An Expense Tracking Application for Tracking User's Expenses...",
+        "projectOverview" : "The Expense Tracker Android App is a user-friendly application designed to help individuals manage their finances effectively. It allows users to record daily expenses, categorize them, and analyze spending patterns through intuitive charts and reports. With features like dashboard and reports, it ensures users stay on top of their financial goals. The app is particularly useful for anyone looking to gain better control over their spending habits, save money, and achieve financial stability. Its simple interface and robust functionality make it an essential tool for personal finance management. The project uses Java for buissness logic and XML for UI. The app is made for Android 13 and above.",
+        "projectRepo" : "https://github.com/AllanSJoseph/ExpenseTracker",
+        "projectThumbnail" : "/Portfolio/projthumbnails/t_expensetracker.png",
+        "projectScreenshots": ["/Portfolio/expnse-trker/screenshot1.webp", "/Portfolio/expnse-trker/screenshot2.webp", "/Portfolio/expnse-trker/screenshot3.webp", "/Portfolio/expnse-trker/screenshot4.webp"],
+        "projectDemo" : ""
+    },
+    {
+        "projectCode" : "inv-mgmt",
+        "projectName" : "Inventory Management System",
+        "projectType" : "Web Application",
+        "projectDate" : "Dec 2024",
+        "projectLang" : ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "projectDesc" : "An Inventory Tracking Application for Tracking Inventory levels of a store...",
+        "projectOverview" : "The Inventory Management System is a web-based application designed to streamline the process of tracking and managing inventory levels in a store. It provides users with the ability to add, update, and delete inventory items, ensuring accurate stock levels at all times. The system also includes features for generating reports on inventory status, making it easier for store managers to make informed decisions about restocking and product management. With its user-friendly interface and robust functionality, this application is an essential tool for any retail business looking to optimize its inventory management processes. The project uses PHP for buissness logic and MySQL for database.",
+        "projectTools" : ["XAMPP", "Bootstrap"],
+        "projectMembers" : ["Allan S Joseph", "Rajnish Kumar", "Neha A Pillai", "Devika R"],
+        "projectRepo" : "https://github.com/AllanSJoseph/InventorySystem",
+        "projectThumbnail" : "/Portfolio/projthumbnails/t_invmgmt.png",
+        "projectScreenshots": ["/Portfolio/inv-mgmt/screenshot1.webp", "/Portfolio/inv-mgmt/screenshot2.webp", "/Portfolio/inv-mgmt/screenshot3.webp", "/Portfolio/inv-mgmt/screenshot4.webp", "/Portfolio/inv-mgmt/screenshot5.webp", "/Portfolio/inv-mgmt/screenshot6.webp"],
+        "projectDemo" : ""
+    },
+    {
+        "projectCode" : "opre-web",
+        "projectName" : "Online Portal For Refurbished Electronics",
+        "projectType" : "Web Application",
+        "projectDate" : "July 2024",
+        "projectLang" : ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+        "projectDesc" : "An E-commerce site for selling and buying refurbished or second hand electronics...",
+        "projectOverview" : "The Online Portal for Refurbished Electronics is a web-based e-commerce platform designed to facilitate the buying and selling of refurbished or second-hand electronic devices. The portal provides users with a seamless experience for browsing, purchasing, and selling various electronic products. It includes features such as user registration, product listings, secure payment processing, and customer reviews. The platform aims to promote sustainability by encouraging the reuse of electronics while providing users with access to quality refurbished products at competitive prices. The project uses PHP for buissness logic and MySQL for database.",
+        "projectTools" : ["XAMPP", "Bootstrap"],
+        "projectMembers" : ["Allan S Joseph", "AryaSree", "Shefna"],
+        "projectRepo" : "https://github.com/AllanSJoseph/online-portal-for-refurbished-electronics",
+        "projectThumbnail" : "/Portfolio/projthumbnails/t_opre.png",
+        "projectScreenshots": ["/Portfolio/opre-web/screenshot1.webp","/Portfolio/opre-web/screenshot2.webp","/Portfolio/opre-web/screenshot3.webp","/Portfolio/opre-web/screenshot4.webp","/Portfolio/opre-web/screenshot5.webp","/Portfolio/opre-web/screenshot6.webp","/Portfolio/opre-web/screenshot7.webp","/Portfolio/opre-web/screenshot8.webp","/Portfolio/opre-web/screenshot9.webp","/Portfolio/opre-web/screenshot10.webp","/Portfolio/opre-web/screenshot11.webp"],
+        "projectDemo" : ""
+    },
+    {
+        "projectCode" : "sms-schl-prg",
+        "projectName" : "Store Management System",
+        "projectType" : "Cli based Python App",
+        "projectDate" : "Jan 2022",
+        "projectLang" : ["Python", "MySQL"],
+        "projectDesc" : "A Cli based store management system with billing system.",
+        "projectOverview" : "The Store Management System is a command-line interface (CLI) application designed to streamline the management of store operations. It provides features for managing inventory, processing sales, and generating reports. The system allows users to add, update, and delete products, as well as track sales transactions. With its user-friendly CLI interface, the application simplifies the process of managing store operations, making it an essential tool for small to medium-sized retail businesses. The project uses Python for buissness logic and MySQL for database.",
+        "projectTools" : ["Python MySQL Connector", "Tabulate"],
+        "projectMembers" : ["Allan S Joseph", "Sankaran Sanji", "Mohammed Rayhan"],
+        "projectRepo" : "https://github.com/AllanSJoseph/store-management-system",
+        "projectThumbnail" : "/Portfolio/projthumbnails/t_sms.png",
+        "projectScreenshots": ["/Portfolio/sms-schl-prg/screenshot1.png"],
+        "projectDemo" : ""
+    }
+]
