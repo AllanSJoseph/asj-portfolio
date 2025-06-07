@@ -126,13 +126,13 @@ function Home() {
                     <div className="eduexp-detail">
                         <h2 className="eduexp-title">Student Placement Coordinator</h2>
                         <h3 className="institution-name"><img src={institutionIcon} alt="institution"/>Cochin University Of Science And Technology</h3>
-                        <h4 className="eduexp-date"><img src={calendarIcon} alt="date"/>Feb 2025 - Present</h4>
+                        <h4 className="eduexp-date"><img src={calendarIcon} alt="date"/>Mar 2025 - Present</h4>
                         <ul>
                             <li>Student Placement Coordinator representing IT 2026 Batch @ CUSAT CUCEK Campus</li>
                         </ul>
                     </div>
                     <div className="eduexp-detail">
-                        <h2 className="eduexp-title">Tech Team Member (Part Time)</h2>
+                        <h2 className="eduexp-title">Tech Team Member</h2>
                         <h3 className="institution-name"><img src={institutionIcon} alt="institution"/>SEDS CUSAT</h3>
                         <h4 className="eduexp-date"><img src={calendarIcon} alt="date"/>2025 - Present </h4>
                         <ul>
