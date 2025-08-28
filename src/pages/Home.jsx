@@ -7,10 +7,11 @@ import ProjectList from "../components/ProjectList";
 import ContactSection from "../components/ContactMe"
 import githubIcon from '../assets/github_logo.svg'
 import linkedInIcon from '../assets/linkedin_logo.svg'
-import profileImage from '../assets/profile_img.png'
-import locationIcon from '../assets/location.svg'
-import calendarIcon from '../assets/calendar.svg'
-import institutionIcon from '../assets/institution.svg'
+import profileImage from '../assets/images/profile_img.png'
+import locationIcon from '../assets/ui_icons/location.svg'
+import calendarIcon from '../assets/ui_icons/calendar.svg'
+import institutionIcon from '../assets/ui_icons/institution.svg'
+import ScrollToTop from "../components/ScrollToTop.jsx";
 
 function Home() {
     const toTypewrite = [
@@ -164,6 +165,7 @@ function Home() {
 
 
         <ContactSection/>
+            <ScrollToTop/>
         </>
     )
 }

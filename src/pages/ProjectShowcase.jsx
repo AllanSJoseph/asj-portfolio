@@ -3,12 +3,13 @@ import { useParams } from 'react-router-dom';
 import ProjectData from '../data/projects.json';
 import VideoComponent from '../components/VideoComponent';
 import ImgCarousel from '../components/ImgCarousel';
+import ScrollToTop from '../components/ScrollToTop';
 import gitHubLogo from '../assets/github_logo.svg';
-import CodeIcon from '../assets/code.svg';
-import ToolIcon from '../assets/tools.svg';
-import GroupIcon from '../assets/group.svg'; 
-import VideoIcon from '../assets/video.svg'; 
-import ImageIcon from '../assets/image.svg'; 
+import CodeIcon from '../assets/ui_icons/code.svg';
+import ToolIcon from '../assets/ui_icons/tools.svg';
+import GroupIcon from '../assets/ui_icons/group.svg';
+import VideoIcon from '../assets/ui_icons/video.svg';
+import ImageIcon from '../assets/ui_icons/image.svg';
 import './pageStyles/ProjectShowcase.css'; 
 
 const ProjectShowcase = () => {
@@ -25,13 +26,14 @@ const ProjectShowcase = () => {
         );
     } else {
       return (
+          <>
             <div className="project-showcase-container">
                 <div className='project-showcase'>
                     <h1 className='project-title-showcase'>{project.projectName}</h1>
                     <h6 className='project-desc-brief'>{project.projectDesc}</h6>
 
                     <div className='project-github'>
-                        <img src={gitHubLogo} className='github-link-proj'/><a href={project.projectRepo} className='github-link-proj-text' target="_blank" rel="noopener noreferrer">View Project on GitHub</a>
+                        <img src={gitHubLogo} alt="Github Logo" className='github-link-proj'/><a href={project.projectRepo} className='github-link-proj-text' target="_blank" rel="noopener noreferrer">View Project on GitHub</a>
                     </div>
 
                     <div className="project-demo">
@@ -87,6 +89,9 @@ const ProjectShowcase = () => {
                 </div>
 
             </div>
+
+             <ScrollToTop showAfter={400} />
+          </>
         );  
     }
 

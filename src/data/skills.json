@@ -1,6 +1,6 @@
 [
     {
-        "skillType": "Languages",
+        "skillType": "Programming Languages",
         "skillDesc": "These are programming languages I know",
         "skillList": [
             {
@@ -20,6 +20,10 @@
                 "skillLink": "https://en.wikipedia.org/wiki/JavaScript"
             },
             {
+                "skillName": "TypeScript",
+                "skillLink": "https://www.typescriptlang.org/"
+            },
+            {
                 "skillName": "HTML5",
                 "skillLink": "https://developer.mozilla.org/en-US/docs/Web/HTML"
             },
@@ -34,40 +38,54 @@
             {
                 "skillName": "C++",
                 "skillLink": "https://isocpp.org/"
-            },
-            {
-                "skillName": "MySQL",
-                "skillLink": "https://www.mysql.com/"
-            },
-            {
-                "skillName": "PostgreSQL",
-                "skillLink": "https://www.postgresql.org/"
             }
         ]
     },
     {
-        "skillType":"Technologies / Frameworks",
+        "skillType":"AI & Automation",
+        "skillDesc": "These the AI frameworks and libraries I know",
+        "skillList":[
+            {
+                "skillName": "MCP (Model Context Protocol)",
+                "skillLink": "https://modelcontextprotocol.io/docs/getting-started/intro"
+            },
+            {
+                "skillName": "LangChain",
+                "skillLink": "https://www.langchain.com/"
+            },
+            {
+                "skillName": "Ollama",
+                "skillLink": "https://ollama.com/"
+            },
+            {
+                "skillName": "PyTorch",
+                "skillLink": "https://pytorch.org/"
+            },
+            {
+                "skillName": "n8n",
+                "skillLink": "https://n8n.io/"
+            },
+            {
+                "skillName": "Scikit-Learn",
+                "skillLink": "https://scikit-learn.org/stable/index.html"
+            }
+        ]
+    },
+    {
+        "skillType":"Web / Android Development",
         "skillDesc": "These the frameworks and technologies I know",
         "skillList":[
             {
-                "skillName": "Git",
-                "skillLink": "https://git-scm.com/"
-            },
-            {
                 "skillName": "React",
                 "skillLink": "https://react.dev/"
-            },
-            {
-                "skillName": "Flutter",
-                "skillLink": "https://flutter.dev/"
             },
             {
                 "skillName": "Django",
                 "skillLink": "https://www.djangoproject.com/"
             },
             {
-                "skillName": "Linux (WSL)",
-                "skillLink": "https://learn.microsoft.com/en-us/windows/wsl/"
+                "skillName": "FastAPI",
+                "skillLink": "https://www.fastapi.tiangolo.com/"
             },
             {
                 "skillName": "Android",
@@ -76,11 +94,47 @@
             {
                 "skillName": "Firebase",
                 "skillLink": "https://firebase.google.com/"
+            }
+        ]
+    },
+    {
+        "skillType":"Database Technologies",
+        "skillDesc": "These the Database Technologies I know",
+        "skillList":[
+            {
+                "skillName": "MySQL",
+                "skillLink": "https://www.mysql.com/"
+            },
+            {
+                "skillName": "PostgreSQL",
+                "skillLink": "https://www.postgresql.org/"
+            },
+            {
+                "skillName": "Redis",
+                "skillLink": "https://redis.io/"
+            },
+            {
+                "skillName": "MongoDB",
+                "skillLink": "https://www.mongodb.com/"
+            }
+        ]
+    },
+    {
+        "skillType":"DevOps",
+        "skillDesc": "These the DevOps based techs I know",
+        "skillList":[
+            {
+                "skillName": "Git",
+                "skillLink": "https://git-scm.com/"
+            },
+            {
+                "skillName": "GitHub",
+                "skillLink": "https://github.com/"
             },
             {
                 "skillName": "Docker",
                 "skillLink": "https://www.docker.com/"
-            }   
+            }
         ]
     },
     {

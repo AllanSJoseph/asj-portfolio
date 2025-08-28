@@ -1,5 +1,35 @@
 [
     {
+        "projectCode" : "inv-mcp",
+        "projectName" : "InventorySystem MCP",
+        "projectType" : "MCP Server",
+        "projectDate" : "Aug 2025",
+        "projectLang" : ["Python","PHP"],
+        "projectTools" : ["Anthropic MCP SDK", "Pydantic"],
+        "projectMembers" : ["Allan S Joseph"],
+        "projectDesc" : "MCP (Model Context Protocol) Server for an Inventory Management System...",
+        "projectOverview" : "InventorySystemMCP is a MCP Server for an inventory tracking system. It is done as a side project as a part of my deep dive into Anthropic's MCP (Model Context Protocol). This server provides 15 tools for Claude or any LLM's to do CRUD operations on the Inventory Management System Database. The server also uses Pydantic based validation to validate LLM inputs. The server is built using Python and uses Anthropic's MCP SDK to provide the tools. The server is designed to be used with any LLM that supports MCP. This server can be easily used to build LLM applications that require CRUD operations on a database.",
+        "projectRepo" : "https://github.com/AllanSJoseph/InventorySystem_MCP_Server",
+        "projectThumbnail" : "/Portfolio/projthumbnails/t_invmcp.png",
+        "projectScreenshots": ["/Portfolio/inv-mcp/screenshot1.webp", "/Portfolio/inv-mcp/screenshot2.webp", "/Portfolio/inv-mcp/screenshot3.webp", "/Portfolio/inv-mcp/screenshot4.webp"],
+        "projectDemo" : "https://www.youtube-nocookie.com/embed/QvIqdVwowvI?si=2gGSZXWTjACIaJ_S"
+    },
+    {
+        "projectCode" : "asj-note-app",
+        "projectName" : "ASJ Note App",
+        "projectType" : "Web Application",
+        "projectDate" : "May 2025",
+        "projectLang" : ["TypeScript","Python","PostgreSQL"],
+        "projectTools" : ["React", "Django Rest Framework", "TailwindCSS", "Axios", "Zustand", "NGINX", "Docker", "Docker-Compose" ],
+        "projectMembers" : ["Allan S Joseph"],
+        "projectDesc" : "A Simple Note Taking Application...",
+        "projectOverview" : "ASJ Note App is a simple Multi-Container Application built for quick note-taking tasks. The application is built using React (TypeScript and TailwindCSS) on Frontend, Django Rest Api (Python) on Backend and PostgreSQL Database. It uses various technologies like JWT Token Based Authentication, Axios for communication, Zustand for global state management and Nginx for serving webpages in production. The Project uses a multi-container architecture where 3 of the components (Frontend, Backend and Database) are seperated in each of their own containers with the help of Docker and docker-compose. The application is designed to be simple and easy to use, making it ideal for quick note-taking tasks. The project is open source and can be used as a starting point for building more complex applications.",
+        "projectRepo" : "https://github.com/AllanSJoseph/asj-note-app",
+        "projectThumbnail" : "/Portfolio/projthumbnails/t_asjnoteapp.png",
+        "projectScreenshots": ["/Portfolio/asj-note-app/screenshot1.webp","/Portfolio/asj-note-app/screenshot2.webp","/Portfolio/asj-note-app/screenshot3.webp","/Portfolio/asj-note-app/screenshot4.webp","/Portfolio/asj-note-app/screenshot5.webp"],
+        "projectDemo" : "https://www.youtube-nocookie.com/embed/1prsNLZWQt8?si=rsfVo7iD7ejJ7kvK"
+    },
+    {
         "projectCode" : "expnse-trker",
         "projectName" : "Expense Tracker",
         "projectType" : "Android Application",
@@ -27,7 +57,7 @@
         "projectRepo" : "https://github.com/AllanSJoseph/InventorySystem",
         "projectThumbnail" : "/Portfolio/projthumbnails/t_invmgmt.png",
         "projectScreenshots": ["/Portfolio/inv-mgmt/screenshot1.webp", "/Portfolio/inv-mgmt/screenshot2.webp", "/Portfolio/inv-mgmt/screenshot3.webp", "/Portfolio/inv-mgmt/screenshot4.webp", "/Portfolio/inv-mgmt/screenshot5.webp", "/Portfolio/inv-mgmt/screenshot6.webp"],
-        "projectDemo" : ""
+        "projectDemo" : "https://www.youtube.com/embed/0ZFLDQwMzsU?si=iBTZP99gPz6ZBykH"
     },
     {
         "projectCode" : "opre-web",
@@ -42,6 +72,21 @@
         "projectRepo" : "https://github.com/AllanSJoseph/online-portal-for-refurbished-electronics",
         "projectThumbnail" : "/Portfolio/projthumbnails/t_opre.png",
         "projectScreenshots": ["/Portfolio/opre-web/screenshot1.webp","/Portfolio/opre-web/screenshot2.webp","/Portfolio/opre-web/screenshot3.webp","/Portfolio/opre-web/screenshot4.webp","/Portfolio/opre-web/screenshot5.webp","/Portfolio/opre-web/screenshot6.webp","/Portfolio/opre-web/screenshot7.webp","/Portfolio/opre-web/screenshot8.webp","/Portfolio/opre-web/screenshot9.webp","/Portfolio/opre-web/screenshot10.webp","/Portfolio/opre-web/screenshot11.webp"],
+        "projectDemo" : ""
+    },
+    {
+        "projectCode" : "unit-convtr",
+        "projectName" : "Unit Converter App",
+        "projectType" : "Web Application",
+        "projectDate" : "Dec 2024",
+        "projectLang" : ["JavaScript", "CSS", "HTML"],
+        "projectDesc" : "A Simple Unit Converter Application for converting various units...",
+        "projectOverview" : "The Unit Converter App is a web-based application designed to facilitate the conversion of various units of measurement. It provides users with an intuitive interface to easily convert between different units, such as length, weight, temperature, and more. The app aims to simplify the conversion process, making it accessible for users of all levels of technical expertise. With its user-friendly design and efficient functionality, the Unit Converter App is an essential tool for anyone needing quick and accurate unit conversions in their daily activities. The Project uses React for building the UI and Vercel for hosting on the web. You can also self-host the application using Docker.",
+        "projectTools" : ["React", "Vercel", "Docker"],
+        "projectMembers" : ["Allan S Joseph"],
+        "projectRepo" : "https://github.com/AllanSJoseph/unit-converter-app",
+        "projectThumbnail" : "/Portfolio/projthumbnails/t_unit_convtr.png",
+        "projectScreenshots": ["/Portfolio/unit-convtr/screenshot1.webp","/Portfolio/unit-convtr/screenshot2.webp","/Portfolio/unit-convtr/screenshot3.webp","/Portfolio/unit-convtr/screenshot4.webp","/Portfolio/unit-convtr/screenshot5.webp"],
         "projectDemo" : ""
     },
     {

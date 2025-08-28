@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom'
 import './componentStyles/NavBar.css'
 import ThemeToggle from './ThemeToggle'
-import HamburgerMenu from '../assets/hamburger_menu.svg'
+import HamburgerMenu from '../assets/ui_icons/hamburger_menu.svg'
 import ASJSuperLogo from '../assets/asjsuperlogo.svg'
 
 const NavBar = () => {
