@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import "./componentStyles/ContactMe.css";
 import Tooltip from "./Tooltip";
-import emailIcon from "../assets/email.svg";
-import resumeIcon from "../assets/document.svg";
-import locationIcon from "../assets/location.svg";
+import emailIcon from "../assets/ui_icons/email.svg";
+import resumeIcon from "../assets/ui_icons/document.svg";
+import locationIcon from "../assets/ui_icons/location.svg";
 import copyIcon from "../assets/ui_icons/copy_icon.svg";
 
 // Firebase

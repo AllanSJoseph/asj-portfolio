@@ -6,7 +6,7 @@
 /* Contact Section Styling */
 .contact-container {
     background-color: grey; /* Darker background than previous sections */
-    background-image: url("../../assets/workdesk.webp");
+    background-image: url("../../assets/images/workdesk.webp");
     background-size: cover;
     background-blend-mode: darken;
     width: 100%;

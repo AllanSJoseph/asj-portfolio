@@ -1,0 +1,32 @@
+/*Scroll Button*/
+
+.scrollbtn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    transition: transform var(--transition-default), box-shadow var(--transition-default);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.scrollbtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25), 0 0 15px rgba(100, 255, 218, 0.2);
+}
+
+
+/*border-radius: 8px;*/
+/*overflow: hidden;*/
+/*box-shadow: var(--shadow-card);*/
+/*transition: transform var(--transition-default), box-shadow var(--transition-default);*/
+/*display: flex;*/
+/*flex-direction: column;*/
+/*height: 100%;*/
+/*border: 1px solid var(--card-border);*/
