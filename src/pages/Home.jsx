@@ -4,13 +4,14 @@ import './pageStyles/Projects.css'
 import { Link } from "react-router-dom";
 import SkillsSection from "../components/SkillsSection";
 import ProjectList from "../components/ProjectList";
-import ContactSection from "../components/ContactMe"
-import githubIcon from '../assets/github_logo.svg'
-import linkedInIcon from '../assets/linkedin_logo.svg'
-import profileImage from '../assets/images/profile_img.png'
-import locationIcon from '../assets/ui_icons/location.svg'
-import calendarIcon from '../assets/ui_icons/calendar.svg'
-import institutionIcon from '../assets/ui_icons/institution.svg'
+import ContactSection from "../components/ContactMe";
+import githubIcon from '../assets/github_logo.svg';
+import linkedInIcon from '../assets/linkedin_logo.svg';
+import profileImage from '../assets/images/profile_img.png';
+import locationIcon from '../assets/ui_icons/location.svg';
+import calendarIcon from '../assets/ui_icons/calendar.svg';
+import institutionIcon from '../assets/ui_icons/institution.svg';
+import marksIcon from '../assets/ui_icons/exam.svg';
 import ScrollToTop from "../components/ScrollToTop.jsx";
 
 function Home() {
@@ -92,7 +93,7 @@ function Home() {
         <section className="about_me">
             <h1><u>About Me</u></h1>
             <p>
-            I am <span><b>Allan S Joseph</b></span>! An Aspiring Programmer and AI engineer. I am currently pursuing my <span><b>Bachelors in Information Technology</b></span> at <span><b>Cochin University of Science and Technology</b></span>. <br /><br />
+            I am <span><b>Allan S Joseph</b></span>! An Aspiring Programmer and AI engineer. I am Graduate of <span><b>Bachelors in Information Technology</b></span> at <span><b>Cochin University of Science and Technology</b></span>. <br /><br />
             My interests involve <span><b>Backend Development</b></span>, <span><b>Large Language Models</b></span> and <span><b>Deep Learning</b></span>. I am currently learning and researching more on the technologies like <span><b>PyTorch</b></span> and <span><b>LangChain</b></span> and improving my current programming skills on <span><b>Python</b></span> and <span><b>JavaScript</b></span>. I have other interests on <span><b>Android</b></span> App Development and some Frontend tools like <span><b>React</b></span> and Backend tools like <span><b>Django</b></span>.<br /><br />
             Aside from Programming, I am interested in <span><b>Video Editing</b></span>, <span><b>Photography</b></span> and <span><b>Drawing</b></span>.
             </p>
@@ -149,13 +150,21 @@ function Home() {
                     <div className="eduexp-detail">
                         <h2 className="eduexp-title">B.Tech in Information Technology</h2>
                         <h3 className="institution-name"><img src={institutionIcon} alt="institution"/>Cochin University Of Science And Technology</h3>
+                        <h3 className="institution-name"><img src={marksIcon} alt="institution"/>CGPA: 9.14</h3>
                         <h4 className="eduexp-date"><img src={calendarIcon} alt="date"/>2022-2026</h4>
-                        <p><i>Currently Undergoing</i></p>
+                        {/* <p><i>Currently Undergoing</i></p> */}
+                    </div>
+                    <div className="eduexp-detail">
+                        <h2 className="eduexp-title">Higher-Secondary School</h2>
+                        <h3 className="institution-name"><img src={institutionIcon} alt="institution"/>Naipunnya Public School, Kochi</h3>
+                        <h3 className="institution-name"><img src={marksIcon} alt="institution"/>Marka: 84%</h3>
+                        <h4 className="eduexp-date"><img src={calendarIcon} alt="date"/>2022</h4>
                     </div>
                     <div className="eduexp-detail">
                         <h2 className="eduexp-title">High School</h2>
                         <h3 className="institution-name"><img src={institutionIcon} alt="institution"/>Naipunnya Public School, Kochi</h3>
-                        <h4 className="eduexp-date"><img src={calendarIcon} alt="date"/>2022</h4>
+                        <h3 className="institution-name"><img src={marksIcon} alt="institution"/>Marks: 91.4%</h3>
+                        <h4 className="eduexp-date"><img src={calendarIcon} alt="date"/>2020</h4>
                     </div>
                 </div>
             </div>

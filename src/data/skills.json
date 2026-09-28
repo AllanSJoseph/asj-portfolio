@@ -72,7 +72,7 @@
         ]
     },
     {
-        "skillType":"Web / Android Development",
+        "skillType":"Web / Mobile Development",
         "skillDesc": "These the frameworks and technologies I know",
         "skillList":[
             {
@@ -80,12 +80,16 @@
                 "skillLink": "https://react.dev/"
             },
             {
-                "skillName": "Django",
-                "skillLink": "https://www.djangoproject.com/"
-            },
-            {
                 "skillName": "FastAPI",
                 "skillLink": "https://www.fastapi.tiangolo.com/"
+            },
+            {
+                "skillName": "Spring Boot",
+                "skillLink": "https://spring.io/projects/spring-boot"
+            },
+            {
+                "skillName": "Django",
+                "skillLink": "https://www.djangoproject.com/"
             },
             {
                 "skillName": "Android",
